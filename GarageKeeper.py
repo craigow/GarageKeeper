@@ -17,7 +17,7 @@ reciever = '<Whoisitgoingto>'
 
 message = """Subject: Door open
 
-Singal sent to close.  Rechecking in 5 minutes"""
+Signal sent to close.  Rechecking in 5 minutes"""
 
 
 #Pin Definitions
