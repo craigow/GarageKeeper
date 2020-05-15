@@ -13,7 +13,7 @@ CheckEnd = 8 #Hour of the day too stop checking to make sure it's closed.  08:00
 sender = '<Whoisitcomingfrom>'
 senderpw = '<password>'
 sendersmtp = 'smtp.gmail.com'
-reciever = '<Whoisitgoingto>'
+receiver = '<Whoisitgoingto>'
 
 message = """Subject: Door open
 
@@ -64,7 +64,7 @@ try:
             server = smtplib.SMTP( sendersmtp, 587 )
             server.starttls()
             server.login(sender, senderpw)
-            server.sendmail(sender, reciever, message )
+            server.sendmail(sender, receiver, message )
             server.quit()
             print  ("Close door request sent. Text sent! Checking again in 5 minutes")
 
