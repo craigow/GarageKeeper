@@ -7,8 +7,8 @@ import time
 
 forever = (1)
 sleep = 300
-CheckStart = 21
-CheckEnd = 8
+CheckStart = 21 #Hour of the day to start checking to make sure it's closed. This would be 21:00
+CheckEnd = 8 #Hour of the day too stop checking to make sure it's closed.  08:00
 
 sender = '<Whoisitcomingfrom>'
 senderpw = '<password>'
