@@ -48,7 +48,7 @@ try:
          CurrentTime=time.strftime('%H') # Get current time in hours only
          TimeInt = int(CurrentTime) 
          print (TimeInt)
-         if (TimeInt <=CheckStart) or (TimeInt >=CheckEnd):
+         if (TimeInt <=CheckEnd) or (TimeInt >=CheckStart):
             GPIO.cleanup(relayPin)
             GPIO.setup(relayPin, GPIO.OUT, initial=GPIO.LOW)
             GPIO.output(relayPin, 1)
